@@ -1,0 +1,283 @@
+#page-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #f48915 10%,
+    #656565 56%,
+    #464D53 100%
+  );
+}
+
+#wrapper {
+  position: absolute;
+  top: 50%;
+  margin-top: -240px;
+  left: 0;
+  width: 100%;
+}
+
+#container {
+  width: 720px;
+  height: 500px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    #f48915 10%,
+    #656565 56%,
+    #464D53 100%
+  );
+}
+
+#info {
+  width: 40%;
+  height: 500px;
+  float: right;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.info-div {
+  text-align: center; 
+}
+
+.centered-content {
+  text-align: center;
+}
+
+
+
+#info h3 {
+  width: 100%;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-size: 29px;
+}
+
+#price {
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+#price h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  padding-top: 10px;
+}
+
+#payment {
+  width: 52%;
+  float: left;
+  padding: 95px 50px 15px 7px;
+}
+
+#checkout {
+  width: 100%;
+}
+
+#checkout input {
+  margin-bottom: 15px;
+}
+
+#checkout label {
+  float: none;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  color: white;
+}
+
+#cvc-label {
+  margin-left: 0px;
+}
+
+.card {
+  width: 29%;
+  margin: 0 10% 25px 10%;
+  border: none;
+  background: none;
+  height: 50px;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.card:focus {
+  filter: none;
+}
+
+#visa,
+#mastercard {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+#cardnumber,
+#cardholder,
+#cvc {
+  width: calc(90% - 40px);
+  background: none;
+  border: 1px solid #6c7a89;
+  padding: 8px 19px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+
+#cardnumber:focus,
+#cardholder:focus,
+#cvc:focus {
+  border: 1px solid #f48915;
+}
+
+::-webkit-input-placeholder {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.668);
+}
+
+#cardnumber::-webkit-input-placeholder {
+  font-size: 1em;
+}
+
+#left {
+  width: 41%;
+  border: 1px solid #6c7a89;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 3px 5px;
+  float: left;
+}
+
+#month,
+#year {
+  background: none;
+  border: 1px solid #6c7a89;
+  padding: 5px;
+  border-radius: 50px;
+  float: left;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  color: rgba(0, 0, 0, 0.668);
+}
+
+#month:focus,
+#year:focus {
+  border: 1px solid #f48915;
+}
+
+#month option,
+#year option {
+  background: #ececec;
+}
+
+#left p {
+  float: left;
+  padding-top: 2px;
+  font-size: 1.2em;
+  color: black;
+  letter-spacing: 3px;
+}
+
+.purchase {
+  background: #9c9c9c;
+  border: none;
+  width: 100%;
+  padding: 12px 10px 10px 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #ececec;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+#expiry-cvc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+#expiry-cvc > div {
+  display: flex;
+  align-items: center;
+}
+
+#expiry-cvc label {
+  margin-right: 10px;
+}
+
+#month,
+#year,
+#cvc {
+  width: auto;
+  flex-grow: 1;
+  margin: 0 3px;
+}
+
+#cvc {
+  margin-left: 0;
+}
+
+#cvc-label {
+  margin-left: 0;
+}
+
+#year {
+  margin-left: 10px;
+}
+
+#month:after {
+  content: '/';
+  margin: 0 5px;
+  color: #6c7a89;
+}
+
+@media screen and (max-width: 767px) {
+  #container {
+    width: 420px;
+    height: auto;
+    display: flex; 
+    flex-direction: column;
+  }
+
+  #wrapper {
+    width: 100%;
+    top:35%;
+  }
+
+  #info {
+    width: 90%;
+    margin-bottom: 0;
+    height: 180px;
+    padding-top: 90px;
+  }
+  
+  #info h3{
+    font-size: 23px;
+  }
+
+  #payment {
+    width: 80%; 
+    margin-bottom: 0;
+    padding: 0px 50px 75px 7px;
+  }
+  .purchase{
+    margin-bottom: 0;
+  }
+
+}
+
+

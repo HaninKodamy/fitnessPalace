@@ -1,0 +1,86 @@
+.user-profile-container {
+  display: flex;
+  justify-content: center;
+  height: 770px;
+}
+
+.user-profile {
+  width: 50%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: auto;
+  background: linear-gradient(to right, #2a2a2e, #767875);
+}
+
+.user-info {
+  margin-bottom: 1rem;
+}
+
+.user-details {
+  color: #c0bdb8;
+  font-size: 16px;
+}
+
+.info-subtitles {
+  color: #cdc9c8;
+  font-size: 19px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.info {
+  color: #181617;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+}
+
+.userIntro {
+  color: transparent;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fd9a21;
+  font-size: 39px;
+}
+
+.classes-plans {
+  list-style: none;
+  padding-left: 0;
+}
+
+.class-plan-item {
+  margin-bottom: 1rem;
+}
+
+.nutrition-plans {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nutrition-plan-item {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .user-profile {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+
+  .info-subtitles {
+    font-size: 16px;
+  }
+
+  .info {
+    font-size: 22px;
+  }
+
+  .userIntro {
+    font-size: 32px;
+  }
+
+  .user-details {
+    font-size: 14px;
+  }
+}

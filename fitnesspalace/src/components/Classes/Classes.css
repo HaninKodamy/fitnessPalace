@@ -1,0 +1,437 @@
+ .section {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+ }
+
+ .section-heading span{
+    font-size: 40px;
+ }
+
+
+ .section-heading {
+     float: left;
+     margin: 140px auto 80px;
+ }
+
+ .section-heading h2 {
+     font-size: 28px;
+     font-weight: 800;
+     color: #232d39;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+ }
+
+ .section-heading h2 em {
+     font-style: normal;
+     color: rgba(253, 120, 43, 0.69);
+ }
+
+ #our-classes {
+     margin-bottom: 140px;
+ }
+
+ #tabs ul {
+     margin: 0;
+     padding: 0;
+ }
+
+ #tabs ul li {
+     margin-bottom: 55px;
+     display: inline-block;
+     width: 100%;
+ }
+
+ .tabs-content span{
+    font-weight: bold;
+    color: var(--orange);
+    padding-bottom: 15px;
+    font-size: 14px;
+ }
+
+ #tabs ul li a {
+     text-transform: capitalize;
+     width: 100%;
+     padding: 25px 25px;
+     display: inline-block;
+     background-color: #fff;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+     border-radius: 5px;
+     font-size: 20px;
+     color: #232d39;
+     letter-spacing: 0.5px;
+     font-weight: 600;
+     transition: all 0.3s;
+     text-decoration: none;
+ }
+
+ #tabs .main-rounded-button a {
+     text-align: center;
+     padding: 20px 30px;
+     width: 100%;
+     border-radius: 5px;
+     display: inline-block;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+     color: #fff;
+     font-size: 19px;
+     letter-spacing: 0.5px;
+     font-weight: 600;
+     background-color: rgba(253, 120, 43, 0.69);
+     text-decoration: none;
+ }
+
+ #tabs .main-rounded-button a:hover {
+     background-color: rgba(253, 120, 43, 0.69);
+ }
+
+ #tabs ul li a img {
+     max-width: 100%;
+     margin-right: 20px;
+ }
+
+ #tabs ul .ui-tabs-active span {
+     background: #faf5b2;
+     border: #faf5b2;
+     line-height: 90px;
+     border-bottom: none;
+ }
+
+ #tabs ul .ui-tabs-active a {
+     color: rgba(253, 120, 43, 0.69);
+ }
+
+ #tabs ul .ui-tabs-active span {
+     color: #1e1e1e;
+ }
+
+ .tabs-content {
+     margin-left: 30px;
+     text-align: left;
+     display: inline-block;
+     transition: all 0.3s;
+ }
+
+ .tabs-content img {
+     max-width: 100%;
+     overflow: hidden;
+     border-radius: 5px;
+ }
+
+ .tabs-content h4 {
+     font-size: 25px;
+     font-weight: 700;
+     color: white;
+     letter-spacing: 0.5px;
+     margin-bottom: 20px;
+     margin-top: 30px;
+ }
+
+ .tabs-content p {
+     font-size: 17px;
+     color: rgba(245, 245, 245, 0.77);
+     margin-bottom: 18px;
+ }
+
+ .main-button{
+    margin-top: 5px;
+ }
+ .main-button a {
+     display: inline-block;
+     font-size: 15px;
+     padding: 12px 20px;
+     background-color: rgba(253, 120, 43, 0.69);
+     color: #fff;
+     text-align: center;
+     font-weight: 400;
+     text-transform: uppercase;
+     transition: all .3s;
+     text-decoration: none;
+ }
+
+ .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1001;
+    width: 70%;
+    max-width: 450px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .modal-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .select-plan {
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal-buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .btn-submit {
+    background-color: orange;
+  }
+  
+  .btn-cancel {
+    background-color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 85%;
+      max-width: 400px;
+    }
+  }
+  
+
+ .col-lg-4,
+ .col-lg-8
+ {
+     position: relative;
+     width: 100%;
+     padding-right: 15px;
+     padding-left: 15px
+ }
+
+ .col {
+     -ms-flex-preferred-size: 0;
+     flex-basis: 0;
+     -ms-flex-positive: 1;
+     flex-grow: 1;
+     max-width: 100%
+ }
+
+ .col-auto {
+     -ms-flex: 0 0 auto;
+     flex: 0 0 auto;
+     width: auto;
+     max-width: 100%
+ }
+
+ .col-1 {
+     -ms-flex: 0 0 8.333333%;
+     flex: 0 0 8.333333%;
+     max-width: 8.333333%
+ }
+
+ .col-lg-4 {
+     -ms-flex: 0 0 33.333333%;
+     flex: 0 0 33.333333%;
+     max-width: 33.333333%
+ }
+
+ .col-lg-5 {
+     -ms-flex: 0 0 41.666667%;
+     flex: 0 0 41.666667%;
+     max-width: 41.666667%
+ }
+
+ .col-lg-8 {
+     -ms-flex: 0 0 66.666667%;
+     flex: 0 0 66.666667%;
+     max-width: 66.666667%
+ }
+
+ .row {
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+     margin-right: -15px;
+     margin-left: -15px;
+ }
+
+ .container {
+     width: 100%;
+     padding-right: 15px;
+     padding-left: 15px;
+     margin-right: auto;
+     margin-left: auto
+ }
+
+ @media (min-width:576px) {
+     .container {
+         max-width: 540px
+     }
+ }
+
+ @media (min-width:768px) {
+     .container {
+         max-width: 720px
+     }
+ }
+
+ @media (min-width:992px) {
+     .container {
+         max-width: 960px
+     }
+ }
+
+ @media (min-width:1200px) {
+     .container {
+         max-width: 1140px
+     }
+ }
+
+ .container-fluid {
+     width: 100%;
+     padding-right: 15px;
+     padding-left: 15px;
+     margin-right: auto;
+     margin-left: auto
+ }
+
+ .container {
+     min-width: 992px !important
+ }
+
+ #our-classes {
+     margin-bottom: 140px;
+ }
+
+ @media (max-width: 992px) {
+
+     
+     #our-classes .tabs-content {
+         margin-left: 0px;
+         margin-top: 30px;
+     }
+
+    
+ }
+
+ section, article {
+     display: block
+ }
+
+  
+
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.col-lg-4 {
+    flex: 0 0 calc(33.333333% - 20px);
+    max-width: calc(33.333333% - 20px);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 10px; 
+    box-sizing: border-box;
+}
+
+.col-lg-8 {
+    flex: 0 0 calc(66.666667% - 20px); 
+    max-width: calc(66.666667% - 20px);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 10px; 
+    box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+    .col-lg-4, .col-lg-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-lg-4, .col-lg-8 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    #tabs ul li {
+        width: 31%;
+        display: block; 
+    }
+
+    #tabs ul li a {
+        padding: 20px; 
+        font-size: 16px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section-heading span {
+        font-size: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .tabs li{
+        width: 50px;
+    }
+
+    #tabs ul li a {
+        font-size: 18px;
+        padding: 20px 20px;
+    }
+    .tabs-content{
+        width: 35%;
+    }
+
+    .tabs-content h4 {
+        font-size: 20px;
+    }
+
+    .tabs-content p {
+        font-size: 10px;
+    }
+
+    .main-button a {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+}

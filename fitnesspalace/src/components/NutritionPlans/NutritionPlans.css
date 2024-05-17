@@ -1,0 +1,88 @@
+.Plans {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.Nutplans-header {
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.plans-categories {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 30px
+}
+
+.Nutplans {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 1.7rem;
+    gap: 1rem;
+    color: white;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.Nutplans:hover {
+    background: var(--planCard);
+    cursor: pointer;
+}
+
+.Nutplans> :nth-child(1) {
+    width: 24rem;
+    fill: white;
+    font-weight: bold;
+}
+
+.Nutplans> :nth-child(2) {
+    font-size: .9rem;
+}
+
+.Nutplans> :nth-child(3) {
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+.upload-now {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: transparent;
+    border: 0cap;
+}
+
+.upload-now span {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.upload-now>img {
+    width: .1rem;
+
+}
+
+@media screen and (max-width: 767px) {
+    .Nutplans-header {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .plans-categories {
+        flex-direction: column;
+    }
+}

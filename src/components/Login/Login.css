@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.login-main {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: white;
+}
+
+.login-left {
+  flex-grow: 1;
+  height: 100vh;
+  background-color: #E9E9E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.birthdate-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.birthdate-input::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-right {
+  height: 100vh;
+  flex-grow: 1;
+}
+
+.login-right-container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.login-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-logo {
+  align-self: center;
+  padding-top: 50px;
+}
+
+.login-center {
+  margin: auto 0;
+}
+
+.login-logo img {
+  width: 50px;
+}
+
+.login-center h2 {
+  font-size: 2.6rem;
+}
+
+.login-center {
+  text-align: center;
+}
+
+.login-center .small-p {
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+form input[type='email'],
+form input[type='password'],
+form input[type='text'] {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.pass-input-div {
+  position: relative;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.pass-input-div svg {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 35px;
+  cursor: pointer;
+  outline: none;
+}
+
+form button[type='submit'] {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+
+.login-center-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-div {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.remember-div label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.forgot-pass-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.forgot-pass-link:hover {
+  text-decoration: underline;
+}
+
+.login-center-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.login-center-buttons button:nth-child(1) {
+  background-color: #f48916;
+  color: white;
+  border: 3px solid #f48916;
+}
+
+.login-center-buttons button:nth-child(1):hover {
+  color: #333;
+  background-color: white;
+}
+
+.login-center-buttons button:nth-child(2) {
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.login-center-buttons button:nth-child(2) img {
+  width: 30px;
+}
+
+.login-center-buttons button:nth-child(2):hover {
+  background-color: #c4c4c457;
+}
+
+.login-bottom-p {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 40px;
+}
+
+.login-bottom-p a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-bottom-p a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 900px) {
+  .login-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-center-options {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .login-center-buttons {
+    margin-top: 10px;
+  }
+
+  .login-center h2 {
+    font-size: 2.5rem;
+  }
+
+  .login-center p {
+    font-size: 1.3rem;
+  }
+
+  .login-bottom-p {
+    font-size: 1rem;
+  }
+
+  .login-bottom-p a {
+    font-weight: 600;
+  }
+
+}
